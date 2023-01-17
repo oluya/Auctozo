@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    
+    background-color: #050505;   
+}
+
+/*Start of footer section*/
+    section.footer{
+        width: 80%;
+        margin: auto;
+    }
+
+  
+
+    .row-1{
+        gap: 59.25%;
+        display: flex;
+        padding-top:4rem;  
+    }
+
+    h4.footer-header{
+        color: #fff;
+        font-size: 2rem;
+        font-family: 'Playfair Display', serif;
+        
+    }
+
+    iframe{
+        padding-right: 4rem;
+    }
+
+    .row-2{
+        display: flex;
+        justify-content: space-around;
+    
+
+    }
+
+    img.footer-vector{
+        box-sizing: border-box;
+        width: 100%;
+        margin: 2rem auto;
+    }
+
+    h4.contacts{
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    span{
+        color: blue;
+    }
+
+    .back-to-top{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 4rem 0px 0px 0px;
+    }
+
+    .scroll-link{
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+    }
+
+    .scroll-link:hover{
+        color: blue;
+
+    }
+
+    h4.socials{
+        color: #fff;
+        font-family: 'Playfair Display', serif;
+        font-size: 2rem;
+        text-align: left;
+    }
+
+    .social-icons{
+        display: flex;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .social-icons a{
+        text-decoration: none;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+
+    .social-icons a:hover{
+        color: blue;
+    }
+
+    @media screen and (max-width:500px){
+        section.footer{
+            box-sizing: border-box;
+        }
+
+        h4.contact{
+            display: none;
+        }
+
+        h4.contacts{
+            font-size: 1rem;
+        }
+
+        .row-1{
+            display: flex;
+        }
+        .row-2{
+            display: flex;
+            flex-direction: column;
+        }
+
+        .col-2{
+            margin-bottom: 2rem;
+        }
+
+        .col-3{
+            margin-bottom: 2rem;
+        }
+
+        .col-4{
+            margin-bottom: 2rem;
+        }
+
+        h4.socials{
+            font-size: 1.5rem;
+        }
+
+        .back-to-top{
+            display: none;
+        }
+
+        iframe{
+            width: 100%;
+        }
+     
+    }
+/*End of footer section*/

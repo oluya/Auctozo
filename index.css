@@ -1,0 +1,694 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    background-color: #050505;
+    
+}
+
+/*Header Styling*/
+header{
+    width:100%;
+    height: 90vh;
+    background-image: url(/Images/Audi\ Carousel\ Photo.png);
+    background-position: center;
+    background-size: cover;
+}
+
+.nav-details{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.logo-details,.nav-links,.log-in-stats{
+    display: flex;
+}
+
+.logo-details,
+.log-in-details
+{
+    flex: 1; 
+}
+nav{
+   
+    flex: 2;
+}
+.nav-links{
+    justify-content: space-evenly ;
+    list-style: none;
+    
+    
+}
+
+.nav-link{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.log-in-stats{
+    justify-content:flex-end;
+    list-style: none;
+    align-items: center;
+    
+}
+
+.sign-up-btn{
+    
+    font-size: 1.5rem;
+    border: none;  
+    padding: 0.9rem;
+    margin-left: 4rem;
+    border-radius: 1.5rem;
+    color: white;
+    background-color: #4B4B4B;
+    cursor: pointer;
+    text-decoration: none;
+}
+.sign-up-btn a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.sign-up-btn:hover{
+    background-color: #9747FF;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+}
+
+.nav-link:hover{
+    color: #1D89EC;
+    opacity: 100%;
+}
+
+button.log-in-btn{
+    border: none;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.log-in-btn:hover{
+    color: #1D89EC;
+}
+
+.header-description{
+    margin: 100px 0 0 80px;
+}
+
+.header-description h3{
+    color: black;
+    font-size: 25px;
+    font-family: 'Playfair Display', serif;
+}
+
+.header-description button{
+    width: 10vw;
+    padding: 5px 0;
+    margin-top: 20px;
+    background-color: #545353;
+    border: none;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.header-description button:hover{
+    background-color: black;
+}
+
+
+/*End of NavBar Styling*/
+/*Start Of Modal Styling*/
+.modal{
+  z-index: 1040px;
+    height: 80vh;
+    width: 50%;
+    background-color: grey;
+    border-radius: 1.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: ease-in 0.2s;
+    
+}
+
+.modal-close{
+    position: absolute;
+    font-size: 1rem;
+    top: 20px;
+    right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-container{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.modal-container.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    padding:1.5rem;
+}
+
+.modal-text{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;  
+}
+
+input{
+    outline: none;
+    border: 1px solid #ccc;
+    border-bottom-width:2px;
+    margin: 3rem 0 3rem 0 ;
+    height: 6vh;
+    width: 30vw;
+    border-radius: 1rem;
+    padding: 0 0 0 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+input:focus{
+    border-color: #9b59b6;
+}
+
+.log-in-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+button.log-in
+{
+    height: 5vh;
+    width: 10vw;
+    background-color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 4rem;  
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 0px 5px;
+}
+
+
+
+button.log-in:hover{
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    color:blue;  
+}
+
+
+
+.content-footer{
+    display: flex;
+    justify-content: center;
+    
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+a.contact-link{
+    color: blue;
+}
+
+/*Start of modal media query*/
+@media screen and (max-width:500px){
+    *{
+        box-sizing: border-box;
+        margin: none;
+        padding: none;
+    }
+
+    .modal-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal{
+        width: 60vw;
+        height: 60vh;
+    }
+
+    img.form-logo{
+        height: 40px;
+        width: auto;
+    }
+
+    h5.modal-text{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .form-input input{
+        height: 25px;
+        width: 95%;
+        margin: 10px auto;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+
+    button.log-in{
+        width: 80%;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .content-footer h5{
+        font-size: 10px;
+    }
+
+    }
+
+
+/*End Of Modal Styling*/
+/**Start of Timer Section**/
+section.timer-section{
+    display: flex;
+    justify-content: center;
+}
+.timer-container{
+  margin-top: 100px;
+}
+
+.timer-text h4{
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.launch-time{
+    display: flex;
+    gap: 50px;
+}
+
+.launch-time div span{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+}
+
+
+.launch-time div p{
+    font-size: 60px;
+    margin-bottom: 14px;
+    font-family: 'Poppins', sans-serif;
+    color:rgb(121, 121, 121);
+    opacity: 100%;
+}
+
+
+
+/**End Of Carousel Section**/
+
+/**Start Of Welcome Section**/
+section.welcome-section{
+    display: flex;
+    flex-direction: column;
+    
+}
+h1.header{
+    color: #FFFFFF;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 10rem;
+}
+p.welcome-text{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    padding: 4rem 20% 0% 20%;
+    text-align: centre;
+    font-size: 1.5rem;
+}
+.cta{
+    margin: auto;
+    padding: 6rem 0 9rem 0;
+}
+
+button.call-to-action{
+    border: none;
+    color: #050505;
+    background-color:#1D89EC;
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 1rem 4rem 1rem 4rem;
+    font-family: 'Playfair Display', serif;
+
+    margin:auto;
+    border-radius: 4rem;
+}
+
+button.call-to-action:hover{
+    background-color: blue;
+    color: black;
+ }
+
+.new-popular{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    padding-bottom: 10rem;
+    
+}
+
+a.new{
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 2rem;
+    
+}
+
+img.vector{
+    padding:2rem;
+}
+
+a.new:hover{
+    color: #1D89EC;
+}
+
+img.icon:hover{
+    color: #1D89EC;
+}
+
+
+/*start of images*/
+section.images{
+    padding: 0 0 5rem 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.top-section{
+width: auto;
+}
+
+.img-1,.top-section{
+    
+    display: flex;
+    height: 80vh;
+}
+
+.img-1{
+    display: flex;
+    flex: 1;
+    width: 100%;
+}
+
+.two-images{
+    flex: 1;
+}
+
+img.img-2{
+    width: 100%;
+    height: 40vh;
+}
+
+img.img-3{
+    width: 100%;
+    height: 40vh;
+}
+
+.bottom-section{
+    display: flex;
+}
+
+img.img-4,
+img.img-5,
+img.img-6{
+    width: 100%;
+}
+/*End of images*/
+
+/*Start of footer section*/
+section.footer{
+    width: 70%;
+    margin: auto;
+}
+
+.row-1{
+    gap: 61.5%;
+    display: flex;
+    padding-top:4rem;  
+}
+
+h4.footer-header{
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif; 
+}
+
+.row-2{
+display: flex;
+justify-content: space-around;
+}
+
+.col-2{
+    margin-right: 50px;
+}
+
+.col-2,
+.col-3,
+.col-4{
+    flex: 1;
+}
+
+
+img.footer-vector{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+h4.contacts{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+span{
+    color: blue;
+}
+
+.back-to-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0px 0px 0px;
+}
+
+.scroll-link{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.scroll-link:hover{
+    color: blue;
+
+}
+
+h4.socials{
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.social-icons a:hover{
+    color: blue;
+}
+
+@media screen and (max-width:500px){
+    section.footer{
+        box-sizing: border-box;
+        width: 90%;
+    }
+
+    h4.contact{
+        display: none;
+    }
+
+    h4.contacts{
+        font-size: 1rem;
+    }
+
+    .row-1{
+        display: flex;
+    }
+    .row-2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-2{
+        margin-bottom: 2rem;
+    }
+
+    .col-3{
+        margin-bottom: 2rem;
+    }
+
+    .col-4{
+        margin-bottom: 2rem;
+    }
+
+    h4.socials{
+        font-size: 1.5rem;
+    }
+
+    .social-icons img{
+        height: 30px;
+    }
+
+    .social-icons a{
+        padding-left: 10px;
+        font-size: 10px;
+    }
+
+    .back-to-top{
+        display: none;
+    }
+
+    iframe{
+        width: 100%;
+    }
+ 
+}
+/*End of footer section*/
+
+/*Main section media query*/
+@media screen and (max-width:500px){
+    header{
+        display: none;
+    }
+
+    .welcome-section h1{
+        font-size: 25px;
+    }
+
+    .welcome-section p{
+        font-size: 15px;
+        text-align: center;
+    }
+
+    button.call-to-action{
+        width: 50vw;
+        height: 6vh;
+        font-size: 15px;
+    }
+
+    img.icons{
+        width:30px;
+    }
+
+    a.new{
+        font-size: 15px;
+    }
+
+   img.vector{
+        height: 80px;
+        width: 80px;
+   }
+    
+    section.images{
+        max-width: 90%;
+        margin: auto;
+        display: block;
+    }
+
+    .top-section{
+        display: none;
+  
+    }
+
+    img.img-2,
+    img.img-1,
+    img.img-3{
+        display: none;
+    }
+
+
+    .bottom-section{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .timer-section{
+        width: 20%;
+        margin: auto;
+    }
+   
+}
+
+

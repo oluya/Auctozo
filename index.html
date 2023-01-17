@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Project</title>
+    <!--Google Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Css StyleSheet-->
+    <link rel="stylesheet" href="index.css" />
+  </head>
+
+
+
+  <body>
+    <!--Start of navbar-->
+    <header>
+      <div class="nav-details">
+        
+      <div class="logo-details">
+        <img src="./Images/Logo.png" alt="Logo" />
+      </div>
+
+      <nav>
+        <ul class="nav-links">
+          <li><a class="nav-link" href="/index.html">Home</a></li>
+          <li><a class="nav-link" href="catalogue.html">Catalogue</a></li>
+          <li><a class="nav-link" href="bid.html">Start Bid</a></li>
+        </ul>
+      </nav>
+
+      <div class="log-in-details">
+        <ul class="log-in-stats">
+          <button class="log-in-btn" id="open">Log in</button>
+          <button class="sign-up-btn">
+            <a href="signup.html"> Sign Up</a>
+          </button>
+        </ul>
+      </div>
+      </div>
+
+      <div class="header-description">
+        <h3>Fulfill Your Dreams With Us </h3>
+        <button type="button">See more</button>
+      </div>
+  
+    </header>
+    <!--End Of NavBar-->
+    <!--Start Of Modal-->
+    <div class="modal-container" id="modal_container">
+      <div class="modal">
+        <form class="log-in-form" action="">
+          <div class="logo">
+            <img src="./Images/Logo.png" class="form-logo" />
+          </div>
+
+          <h5 class="modal-text">
+            Type your email and password to log in to your account
+          </h5>
+
+          <div class="form-input">
+            <input type="text" name="email" maxlength="30" placeholder="Enter your email" />
+            <input
+              type="password"
+              name="password"
+              placeholder="Enter your password"
+              maxlength="20"
+              minlength="6"
+            />
+          </div>
+
+          <div class="log-in-btn">
+            <button class="log-in" id="close" type="submit">Log in</button>
+          </div>
+
+          <div class="content-footer">
+            <h5>
+              Having issues? Let us know
+              <a class="contact-link" href="#">here</a>
+            </h5>
+          </div>
+        </form>
+      </div>
+    </div>
+    <!--End of modal-->
+    <!--End Of NavBar + Modal-->
+
+    <!--Start Of Timer Section-->
+    <section class="timer-section">
+      <div class="timer-container">
+        <div class="timer-text">
+          <h4>The Auction begins in</h4>
+        </div>
+
+        <div class="launch-time">
+          <div>
+            <p id="days">00</p>
+            <span>Days</span>
+          </div>
+          <div>
+            <p id="hours">00</p>
+            <span>Hours</span>
+          </div>
+          <div>
+            <p id="minutes">00</p>
+            <span>Minutes</span>
+          </div>
+          <div>
+            <p id="seconds">00</p>
+            <span>Seconds</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Start of Welcome Section-->
+    <section class="welcome-section">
+      <h1 class="header">Welcome to Exotic Auctions</h1>
+      <p class="welcome-text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum unde
+        nulla possimus maxime eaque, quod id, architecto error itaque facere
+        aspernatur, recusandae numquam est ipsa fugiat saepe hic. Natus,
+        adipisci?
+      </p>
+      <p class="welcome-text">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum unde
+        nulla possimus maxime eaque, quod id, architecto error itaque facere
+        aspernatur, recusandae numquam est ipsa fugiat saepe hic. Natus,
+        adipisci?
+      </p>
+      <div class="cta">
+        <a href="./catalogue.html"
+          ><button class="call-to-action">Take me to the products</button>
+        </a>
+      </div>
+
+      <div class="new-popular">
+        <img class="icons" src="./Icons/New.svg" alt="new icon" />
+        <a class="new" href="#">New</a>
+        <img src="./Icons/New & Popular Vector.svg" class="vector" />
+        <img class="icons" src="./Icons/Popular Star.svg" alt="star icon" />
+        <a class="new" href="#">Popular</a>
+      </div>
+    </section>
+
+    <!--Start of images section-->
+    <section class="images">
+      <div class="top-section">
+        <div class="image-1">
+          <img class="img-1" src="./Images/Mercedes Amz Interior.png" alt="" />
+        </div>
+
+        <div class="two-images">
+          <div class="image-2">
+            <img class="img-2" src="./Images/NewDodge.png" />
+          </div>
+          <div class="image-2">
+            <img src="./Images/Dodge Interior.png" class="img-3" />
+          </div>
+        </div>
+      </div>
+
+      <div class="bottom-section">
+        <div class="bottom-img-1">
+          <img src="./Images/Mercedes Amg.png" class="img-4" />
+        </div>
+        <div class="bottom-img-2">
+          <img src="./Images/Audi Interior.png" class="img-5" />
+        </div>
+        <div class="bottom-img-3">
+          <img src="./Images/Audi A6.png" class="img-6" />
+          <img-6></img-6>
+        </div>
+      </div>
+    </section>
+    <!--End of images section-->
+
+    <!--Start of footer section-->
+    <section class="footer">
+      <div class="row-1">
+        <div class="col-1">
+          <h4 class="footer-header">About Us</h4>
+        </div>
+
+        <div class="col-1">
+          <h4 class="footer-header contact">Contact Us</h4>
+        </div>
+      </div>
+
+      <img class="footer-vector" src="./Icons/Footer vector.svg" alt="" />
+
+      <div class="row-2">
+        <div class="col-2">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.0807702517!2d37.01200871410019!3d-1.101700435761812!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f463c138084df%3A0xff48528702d95cd5!2sJKUAT%20Main%20Gate%2C%20Gachororo%20road%2C%20Juja!5e0!3m2!1sen!2ske!4v1655908671845!5m2!1sen!2ske"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+        <div class="col-3">
+          <h4 class="contacts">
+            Jommo Kenyatta University Of Agriculture And Technology
+          </h4>
+          <h4 class="contacts">Juja Kwale,Rd,Juja</h4>
+          <h4 class="contacts">
+            P.O Box : <span>P.O. Box 62 000 – 00200 NAIROBI, KENYA</span>
+          </h4>
+          <h4 class="contacts">Telephone : <span>067-5870001-5</span></h4>
+          <h4 class="contacts">Email : <span>example@gmail.com </span></h4>
+
+          <div class="back-to-top">
+            <img src="./Icons/Scroll Up.svg" alt="" />
+            <a href="#" class="scroll-link">Back to top</a>
+          </div>
+        </div>
+
+        <div class="col-4">
+          <h4 class="socials">
+            Reach us through the following social media platforms
+          </h4>
+
+          <div class="social-icons">
+            <img class"social-img" src="./Icons/Facebook.svg" >
+            <a href="www.facebook.com">Facebook</a>
+          </div>
+          <div class="social-icons">
+            <img class"social-img" src="./Icons/Instagram.svg" >
+            <a href="www.instagram.com">Instagram</a>
+          </div>
+          <div class="social-icons">
+            <img class"social-img" src="./Icons/Twitter Circled.svg" >
+            <a href="www.twitter.com">Twitter</a>
+          </div>
+        </div>
+      </div>
+
+      <img class="footer-vector" src="./Icons/Footer vector.svg" alt="" />
+    </section>
+
+    <!--End of footer section-->
+
+
+
+    <!--Java Script Links-->
+    <script src="timer.js"></script>
+    <script src="modal.js"></script>
+  </body>
+</html>

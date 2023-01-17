@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Playfair Display', serif;
+    background-color: #050505;
+    
+}
+
+/*Header Styling*/
+header{
+    display: flex;
+    width:90%;
+    margin: auto;
+    height: 15vh;
+    align-items: center;
+}
+
+.logo-details,.nav-links,.log-in-stats{
+    display: flex;
+}
+
+.logo-details{
+   
+    flex: 1;
+    
+}
+nav{
+   
+    flex: 2;
+}
+.nav-links{
+    justify-content: space-evenly ;
+    list-style: none;
+    
+    
+}
+
+.nav-link{
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.log-in-stats{
+    justify-content:flex-end;
+    list-style: none;
+    align-items: center;
+    
+}
+.log-in-details{
+    
+    flex: 1;
+}
+.sign-up-btn{
+    
+    font-size: 1.5rem;
+    border: none;  
+    padding: 0.9rem;
+    margin-left: 4rem;
+    border-radius: 1.5rem;
+    color: white;
+    background-color: #4B4B4B;
+    cursor: pointer;
+    text-decoration: none;
+}
+.sign-up-btn a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.sign-up-btn:hover{
+    background-color: #9747FF;
+    padding-right: 1.2rem;
+    padding-left: 1.2rem;
+}
+
+.nav-link:hover{
+    color: #1D89EC;
+    opacity: 100%;
+}
+
+.log-in-btn{
+    outline: none;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    background-color: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    gap: 10px;
+}
+
+.log-in-btn:hover{
+    color: #1D89EC;
+}
+
+
+/*End of NavBar Styling*/
+/*Start Of Modal Styling*/
+.modal{
+    height: 80vh;
+    width: 50%;
+    background-color: grey;
+    border-radius: 1.5rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    transition: ease-in 0.2s;
+    
+}
+
+.modal-close{
+    position: absolute;
+    font-size: 1rem;
+    top: 20px;
+    right: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.modal-container{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: visibility 0s, opacity 0.5s;
+}
+
+.modal-container.show{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    padding:1.5rem;
+}
+
+.modal-text{
+    color: #FFFFFF;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
+
+.form-input{
+    display: flex;
+    flex-direction: column;  
+}
+
+input{
+    outline: none;
+    border: 1px solid #ccc;
+    border-bottom-width:2px;
+    margin: 3rem 0 3rem 0 ;
+    height: 6vh;
+    width: 30vw;
+    border-radius: 1rem;
+    padding: 0 0 0 2rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+input:focus{
+    border-color: #9b59b6;
+}
+
+.log-in-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+button.log-in
+{
+    height: 5vh;
+    width: 10vw;
+    background-color: black;
+    font-size: 1.5rem;
+    text-align: center;
+    color: #FFFFFF;
+    border-radius: 4rem;  
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0px 0px 5px;
+}
+
+
+
+button.log-in:hover{
+    padding-left: 1.2rem;
+    padding-right: 1.2rem;
+    color:blue;  
+}
+
+
+
+.content-footer{
+    display: flex;
+    justify-content: center;
+    
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+a.contact-link{
+    color: blue;
+}
+
+
+
+
+@media screen and (max-width:500px){
+    *{
+        box-sizing: border-box;
+        margin: none;
+        padding: none;
+    }
+
+    .modal-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .modal{
+        width: 60vw;
+        height: 60vh;
+    }
+
+    img.form-logo{
+        height: 40px;
+        width: auto;
+    }
+
+    h5.modal-text{
+        width: 90%;
+        margin: auto;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .form-input input{
+        height: 25px;
+        width: 95%;
+        margin: 10px auto;
+        border-radius: 5px;
+        font-size: 10px;
+    }
+
+    button.log-in{
+        width: 80%;
+        height: 25px;
+        font-size: 12px;
+    }
+
+    .content-footer h5{
+        font-size: 10px;
+    }
+    }
+
+
+/*End Of Modal Styling*/

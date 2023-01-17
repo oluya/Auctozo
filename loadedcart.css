@@ -1,0 +1,460 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: black;
+}
+html{
+    font-size: 62.5%;
+}
+/*Start of NavBar Styling*/
+nav{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding-top: 10px;
+    margin: auto;
+    gap: 200px;
+}
+
+.logo{
+    padding-left:20px ;
+}
+
+.logo img{
+    height:100% ;
+    width: 80%;  
+}
+
+ul.nav-links{
+    display: inline-flex;
+    list-style: none;
+}
+
+li.nav-items{
+    margin: 15px;
+    padding: 15px;
+}
+
+li.nav-items:last-child{
+    margin-left: 300px;
+}
+
+
+.nav-items a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+}
+
+.nav-items a:hover{
+    color: #1D89EC;
+    
+}
+
+.nav-items .fa{
+    margin-left: 8px;
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+li.nav-items:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    margin-top: 15px;
+}
+
+li.nav-items :hover .sub-menu-1 ul{
+display: block;
+margin: 10px;
+list-style: none;
+}
+
+/*End of NavBar Styling*/
+
+
+/*Start of main section*/
+section.main{
+    width: 95%;
+    margin: auto;
+    padding-left: 50px;
+    display: flex;
+    gap: 75px;
+}
+
+
+.cart{
+width: 500px;
+height: 500px;
+background-color: #FFFFFF;
+margin: 50px 0px 0px ;
+margin-left: 100px;
+border-radius: 10px;
+}
+
+.cart{
+    display: flex;
+    flex-direction:column ;
+}
+
+.cart h4{
+    font-family: 'Playfair Display';
+    font-weight: 500;
+    font-size: 35px;
+    margin: 10px 0 0 30px;
+}
+
+img.vector{
+    max-width: 90%;
+    margin:20px 30px;
+}
+
+.cart-img{
+    display: flex;
+}
+
+img.card-img{
+width: 81px;
+height: 100px;
+margin: 0px 0 0 30px;
+}
+
+.content{
+    display: flex;
+}
+
+.content h5{
+font-style: normal;
+font-weight: 600;
+font-size: 12px;
+line-height: 22px;
+color: #000000;
+font-family: 'Poppins';
+margin-left: 10px;
+margin-top: 10px;
+}
+
+.sub-content h6{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 20px;
+    margin: 0px 10px;
+}
+
+h4.price-text{
+    font-size: 15px;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.price{
+    margin-left: 100px;
+    display: flex;
+    flex-direction: column;
+}
+
+img.delete-img{
+    width: 20px;
+    height: 20px;
+    margin-left: 25px;
+}
+
+.delete{
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+    gap: 5px;
+}
+
+.delete button{
+    border: none;
+    background-color: transparent;
+    color: #4B4B4B;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.checkout{
+    width: 400px;
+    height:350px;
+    background-color: #FFFFFF;
+    margin-top:50px ;
+    border-radius: 10px;
+}
+
+.checkout-details{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.title,
+.values{  
+    line-height: 30px;
+}
+
+.title h4{
+    font-size: 1.5rem;
+    font-family: 'Playfair Display';
+    font-weight: 600;
+}
+
+.title h5{
+    font-family: 'Poppins';
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+.values h4{
+    font-size: 1.5rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.values h5{
+    font-family: 'Poppins';
+    font-size: 1.1rem;
+    font-weight: 400;
+}
+
+img.vector-1{
+    max-width: 95%;
+    margin: 10px 10px 10px 10px;
+}
+
+.total{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.total h4{
+    font-size: 1.2rem;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+}
+
+.button button{
+    width: 90%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background: #9747FF;
+}
+
+a.btn-link{
+    color: white;
+    text-decoration: none;
+    font-family: 'Playfair Display';
+    font-weight: 500;
+}
+/*End of main section*/
+
+/*Start of footer section*/
+section.footer{
+    width: 80%;
+    margin: auto;
+}
+
+
+
+.row-1{
+    gap: 59.25%;
+    display: flex;
+    padding-top:4rem;  
+}
+
+h4.footer-header{
+    color: #fff;
+    font-size: 2rem;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+iframe{
+    padding-right: 4rem;
+}
+
+.row-2{
+    display: flex;
+    justify-content: space-around;
+
+
+}
+
+img.footer-vector{
+    box-sizing: border-box;
+    width: 100%;
+    margin: 2rem auto;
+}
+
+h4.contacts{
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+span{
+    color: blue;
+}
+
+.back-to-top{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 4rem 0px 0px 0px;
+}
+
+.scroll-link{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+}
+
+.scroll-link:hover{
+    color: blue;
+
+}
+
+h4.socials{
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    text-align: left;
+}
+
+.social-icons{
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.social-icons a{
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.social-icons a:hover{
+    color: blue;
+}
+
+@media screen and (max-width:500px){
+    section.footer{
+        box-sizing: border-box;
+    }
+
+    h4.contact{
+        display: none;
+    }
+
+    h4.contacts{
+        font-size: 1rem;
+    }
+
+    .row-1{
+        display: flex;
+    }
+    .row-2{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-2{
+        margin-bottom: 2rem;
+    }
+
+    .col-3{
+        margin-bottom: 2rem;
+    }
+
+    .col-4{
+        margin-bottom: 2rem;
+    }
+
+    h4.socials{
+        font-size: 1.5rem;
+    }
+
+    .back-to-top{
+        display: none;
+    }
+
+    iframe{
+        width: 100%;
+    }
+ 
+}
+/*End of footer section*/
+
+@media screen and (max-width:500px){
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    section.main{
+        display: block;
+        margin-left: 0;
+        padding-left: 0;
+       
+    }
+
+    .cart{
+        width:80vw;
+        height: 90vh;
+        margin: auto;
+    }
+
+    .checkout{
+        width: 80vw;
+        height: 60vh;
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    .checkout-details{
+        padding-top: 40px;
+        width: 90%;
+    }
+
+    .cart h4{
+        font-size: 2.5rem;
+    }
+
+    h4.price-text{
+        font-size: 1.5rem;
+    }
+
+    img.delete-img{
+        display: none;
+    }
+
+    .delete button{
+        padding-left: 30px;
+    }
+
+    img.card-img{
+        height: 80px;
+    }
+}

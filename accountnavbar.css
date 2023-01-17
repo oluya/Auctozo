@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: black;
+}
+
+/*Start of NavBar Styling*/
+nav{
+    display: flex;
+    gap: 300px;
+    align-items: center;
+    width: 90%;
+    padding-top: 5px;
+    margin: auto;
+   
+}
+
+.logo{
+    padding-left:20px ;
+   
+}
+
+.logo img{
+    height:100% ;
+    width: 80%;  
+}
+
+ul.nav-links{
+    display:inline-flex;
+    list-style: none;
+    gap:30px;
+}
+
+li.nav-items{
+    color: white;
+}
+
+
+li.nav-items:last-child{
+    margin-left: 300px;
+}
+
+.nav-items a{
+    text-decoration: none;
+    font-size: 15px;
+    color: white;
+    font-family: 'Playfair Display', serif;
+    
+}
+
+.nav-items a:hover{
+    color: #1D89EC;
+    
+}
+
+.nav-items .fa{
+    margin-left: 8px;
+}
+
+.sub-menu-1{
+    display: none;
+}
+
+li.nav-items:hover .sub-menu-1{
+    display: block;
+    position: absolute;
+    margin-top: 15px; 
+}
+
+
+
+
+li.nav-items:hover .sub-menu-1 ul{
+display: block;
+margin: 10px;
+list-style: none;
+
+}
+
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background: white;
+}
+
+@media(max-width:768px){
+    header{
+        padding-top: 10px;
+    }
+
+    img.logo{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    ul.nav-links{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(1, 4, 57);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    li.nav-items{
+        margin: 16px 0;
+    }
+
+    .nav-links.active{
+        left: 0;
+    }
+
+    li.nav-items:last-child{
+        margin-left: 0;
+    }
+
+    .sub-menu-1 ul{
+        list-style: none;
+        margin-left: 320px;
+    }
+
+
+}
+
+/*End of NavBar Styling*/
